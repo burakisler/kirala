@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Araç Kirala!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-dark"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Kirala.com</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarcollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-grid gap-2 justify-content-lg-between"
+          id="navbarcollapse"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Araçlarımız</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ofislerimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">İletişim</a>
+            </li>
+          </ul>
+          <form class="d-lg-block d-lg-flex width_class" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Sitede Ara"
+            />
+            <div class="d-grid d-lg-block">
+              <button class="btn btn-outline-light" type="submit">Ara</button>
+            </div>
+          </form>
+
+          <div
+            class="d-grid gap-2 d-lg-block d-lg-flex justify-content-lg-center"
+          >
+            <a href="" class="btn btn-outline-warning sign_class">Giriş Yap</a>
+            <a href="signup.html" class="btn btn-warning sign_class">Üye Ol</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div
+        id="carousel_kampanya"
+        class="carousel slide carousel-fade carousel-dark"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel_kampanya"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel_kampanya"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel_kampanya"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel_kampanya"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="kampanya1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="kampanya2.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="kampanya3.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="kampanya4.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel_kampanya"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon buyuk"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel_kampanya"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon buyuk"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row g-4">
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse_clio"
+        >
+          <div class="card">
+            <div class="card-header border-bottom-0 fs-4">Renault Clio</div>
+            <img
+              src="https://www.sixt.com.tr/storage/cache/56e9e8d22da2e509c208a1484c8bbbfa96aed6ed.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Renault Clio, Renault Taliant veya benzeri | Binek Otomatik |
+                Benzin
+              </h6>
+              <p class="card-text fw-bold fs-4" style="color: orange">
+                678.<small>30</small> TL | günlük
+              </p>
+            </div>
+            <div class="card-footer border-top-0">
+              <div
+                class="d-grid gap-2 d-md-block d-md-flex justify-content-md-center"
+              >
+                <button
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#arac_modal"
+                  type="button"
+                >
+                  Tarihleri Kontrol Et
+                </button>
+                <div class="modal" tabindex="-1" id="arac_modal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">
+                          İstediğiniz tarih aralığını seçiniz
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div>Başlangıç Tarihi</div>
+                        <input type="datetime-local" />
+                        <hr />
+                        <div>Bitiş Tarihi</div>
+                        <input type="datetime-local" />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Kapat
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Ayarları kaydet
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-outline-success" type="button">
+                  Hemen Kirala!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse_egea"
+        >
+          <div class="card">
+            <div class="card-header border-bottom-0 fs-4">Fiat Egea Sedan</div>
+            <img
+              src="https://www.sixt.com.tr/storage/cache/91a65339b0cbc79379694fa581363e3e1c006fcd.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Fiat Egea Sedan Fiat Egea Hb veya benzeri | Binek Manuel | Dizel
+              </h6>
+              <p class="card-text fw-bold fs-4" style="color: orange">
+                678.<small>30</small> TL | günlük
+              </p>
+            </div>
+            <div class="card-footer border-top-0">
+              <div
+                class="d-grid gap-2 d-md-block d-md-flex justify-content-md-center"
+              >
+                <button
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#arac_modal"
+                  type="button"
+                >
+                  Tarihleri Kontrol Et
+                </button>
+                <div class="modal" tabindex="-1" id="arac_modal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">
+                          İstediğiniz tarih aralığını seçiniz
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div>Başlangıç Tarihi</div>
+                        <input type="datetime-local" />
+                        <hr />
+                        <div>Bitiş Tarihi</div>
+                        <input type="datetime-local" />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Kapat
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Ayarları kaydet
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-outline-success" type="button">
+                  Hemen Kirala!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse_duster"
+        >
+          <div class="card">
+            <div class="card-header border-bottom-0 fs-4">Dacia Duster</div>
+            <img
+              src="https://www.sixt.com.tr/storage/cache/c766285c999b3ebcf584038df34ca617c466ef98.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Dacia Duster, Dacia Sandero Stepway veya benzeri | Suv Otomatik
+                | Benzin
+              </h6>
+              <p class="card-text fw-bold fs-4" style="color: orange">
+                817.<small>60</small> TL | günlük
+              </p>
+            </div>
+            <div class="card-footer border-top-0">
+              <div
+                class="d-grid gap-2 d-md-block d-md-flex justify-content-md-center"
+              >
+                <button
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#arac_modal"
+                  type="button"
+                >
+                  Tarihleri Kontrol Et
+                </button>
+                <div class="modal" tabindex="-1" id="arac_modal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">
+                          İstediğiniz tarih aralığını seçiniz
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div>Başlangıç Tarihi</div>
+                        <input type="datetime-local" />
+                        <hr />
+                        <div>Bitiş Tarihi</div>
+                        <input type="datetime-local" />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Kapat
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Ayarları kaydet
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-outline-success" type="button">
+                  Hemen Kirala!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collapse_clio">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <img
+                  src="https://www.sixt.com.tr/storage/cache/e7460c98cd40cfc532f81b820355ed9b8fd3ee8a.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  unde ab adipisci, veniam ullam saepe nisi inventore amet
+                  omnis. Tempore officiis molestiae repellat mollitia
+                  consequuntur deleniti suscipit? Laudantium, ipsa numquam.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  assumenda eaque! Aperiam eveniet eius reiciendis laborum sint
+                  illum, unde cumque ex excepturi necessitatibus, aut suscipit
+                  et alias, tenetur iusto facere!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae quidem voluptate soluta officia expedita mollitia?
+                  Velit at, et aliquam modi consequuntur suscipit obcaecati illo
+                  corporis earum voluptates nostrum sunt distinctio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collapse_egea">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <img
+                  src="https://www.sixt.com.tr/storage/cache/dd7d38ccdf8120b862aba24f543474f0cf1b736c.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  unde ab adipisci, veniam ullam saepe nisi inventore amet
+                  omnis. Tempore officiis molestiae repellat mollitia
+                  consequuntur deleniti suscipit? Laudantium, ipsa numquam.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  assumenda eaque! Aperiam eveniet eius reiciendis laborum sint
+                  illum, unde cumque ex excepturi necessitatibus, aut suscipit
+                  et alias, tenetur iusto facere!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae quidem voluptate soluta officia expedita mollitia?
+                  Velit at, et aliquam modi consequuntur suscipit obcaecati illo
+                  corporis earum voluptates nostrum sunt distinctio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collapse_duster">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <img
+                  src="https://www.sixt.com.tr/storage/cache/6e6471322955a2dd2106fd2e3f4c1595f5f5fe17.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  unde ab adipisci, veniam ullam saepe nisi inventore amet
+                  omnis. Tempore officiis molestiae repellat mollitia
+                  consequuntur deleniti suscipit? Laudantium, ipsa numquam.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  assumenda eaque! Aperiam eveniet eius reiciendis laborum sint
+                  illum, unde cumque ex excepturi necessitatibus, aut suscipit
+                  et alias, tenetur iusto facere!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae quidem voluptate soluta officia expedita mollitia?
+                  Velit at, et aliquam modi consequuntur suscipit obcaecati illo
+                  corporis earum voluptates nostrum sunt distinctio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse_megane"
+        >
+          <div class="card">
+            <div class="card-header border-bottom-0 fs-4">
+              Renault Megane Sedan
+            </div>
+            <img
+              src="https://www.sixt.com.tr/storage/cache/c5c4e5bf3a2d94abdc049fa7c861f0d5acee24ed.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Renault Megane Sedan, Toyota Corolla veya benzeri | Binek
+                Otomatik | Benzin
+              </h6>
+              <p class="card-text fw-bold fs-4" style="color: orange">
+                850.<small>50</small> TL | günlük
+              </p>
+            </div>
+            <div class="card-footer border-top-0">
+              <div
+                class="d-grid gap-2 d-md-block d-md-flex justify-content-md-center"
+              >
+                <button
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#arac_modal"
+                  type="button"
+                >
+                  Tarihleri Kontrol Et
+                </button>
+                <div class="modal" tabindex="-1" id="arac_modal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">
+                          İstediğiniz tarih aralığını seçiniz
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div>Başlangıç Tarihi</div>
+                        <input type="datetime-local" />
+                        <hr />
+                        <div>Bitiş Tarihi</div>
+                        <input type="datetime-local" />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Kapat
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Ayarları kaydet
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-outline-success" type="button">
+                  Hemen Kirala!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse_qashgai"
+        >
+          <div class="card">
+            <div class="card-header border-bottom-0 fs-4">Nissan Qashqai</div>
+            <img
+              src="https://www.sixt.com.tr/storage/cache/317e637b6e34dfd9be83f7254d5cf61557dec000.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Nissan Qashqai, Toyota Corolla Cross veya benzeri | Suv Otomatik
+                | Benzin
+              </h6>
+              <p class="card-text fw-bold fs-4" style="color: orange">
+                1,362.<small>20</small> TL | günlük
+              </p>
+            </div>
+            <div class="card-footer border-top-0">
+              <div
+                class="d-grid gap-2 d-md-block d-md-flex justify-content-md-center"
+              >
+                <button
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#arac_modal"
+                  type="button"
+                >
+                  Tarihleri Kontrol Et
+                </button>
+                <div class="modal" tabindex="-1" id="arac_modal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">
+                          İstediğiniz tarih aralığını seçiniz
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div>Başlangıç Tarihi</div>
+                        <input type="datetime-local" />
+                        <hr />
+                        <div>Bitiş Tarihi</div>
+                        <input type="datetime-local" />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Kapat
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Ayarları kaydet
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-outline-success" type="button">
+                  Hemen Kirala!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse_vito"
+        >
+          <div class="card">
+            <div class="card-header border-bottom-0 fs-4">
+              Mercedes-Benz Vito
+            </div>
+            <img
+              src="https://www.sixt.com.tr/storage/cache/0b697ed87bbe50d683ed5547a470b3eb3f9c1439.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="card-title">
+                Mercedes-Benz Vito, Ford Tourneo Custom veya benzeri | Minibüs
+                Otomatik | Dizel
+              </h6>
+              <p class="card-text fw-bold fs-4" style="color: orange">
+                2,972.<small>90</small> TL | günlük
+              </p>
+            </div>
+            <div class="card-footer border-top-0">
+              <div
+                class="d-grid gap-2 d-md-block d-md-flex justify-content-md-center"
+              >
+                <button
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#arac_modal"
+                  type="button"
+                >
+                  Tarihleri Kontrol Et
+                </button>
+                <div class="modal" tabindex="-1" id="arac_modal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">
+                          İstediğiniz tarih aralığını seçiniz
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div>Başlangıç Tarihi</div>
+                        <input type="datetime-local" />
+                        <hr />
+                        <div>Bitiş Tarihi</div>
+                        <input type="datetime-local" />
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Kapat
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Ayarları kaydet
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-outline-success" type="button">
+                  Hemen Kirala!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collapse_megane">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <img
+                  src="https://www.sixt.com.tr/storage/cache/bde85c2019ef706a881939ff54684597b746dd5a.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  unde ab adipisci, veniam ullam saepe nisi inventore amet
+                  omnis. Tempore officiis molestiae repellat mollitia
+                  consequuntur deleniti suscipit? Laudantium, ipsa numquam.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  assumenda eaque! Aperiam eveniet eius reiciendis laborum sint
+                  illum, unde cumque ex excepturi necessitatibus, aut suscipit
+                  et alias, tenetur iusto facere!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae quidem voluptate soluta officia expedita mollitia?
+                  Velit at, et aliquam modi consequuntur suscipit obcaecati illo
+                  corporis earum voluptates nostrum sunt distinctio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collapse_qashgai">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <img
+                  src="https://www.sixt.com.tr/storage/cache/e4152ec841ec396129fb8609f4be226ec3c75046.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  unde ab adipisci, veniam ullam saepe nisi inventore amet
+                  omnis. Tempore officiis molestiae repellat mollitia
+                  consequuntur deleniti suscipit? Laudantium, ipsa numquam.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  assumenda eaque! Aperiam eveniet eius reiciendis laborum sint
+                  illum, unde cumque ex excepturi necessitatibus, aut suscipit
+                  et alias, tenetur iusto facere!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae quidem voluptate soluta officia expedita mollitia?
+                  Velit at, et aliquam modi consequuntur suscipit obcaecati illo
+                  corporis earum voluptates nostrum sunt distinctio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="collapse_vito">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <img
+                  src="https://www.sixt.com.tr/storage/cache/b84fb7cba6b4a2f837370a1c9269f5599627a02a.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  unde ab adipisci, veniam ullam saepe nisi inventore amet
+                  omnis. Tempore officiis molestiae repellat mollitia
+                  consequuntur deleniti suscipit? Laudantium, ipsa numquam.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  assumenda eaque! Aperiam eveniet eius reiciendis laborum sint
+                  illum, unde cumque ex excepturi necessitatibus, aut suscipit
+                  et alias, tenetur iusto facere!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae quidem voluptate soluta officia expedita mollitia?
+                  Velit at, et aliquam modi consequuntur suscipit obcaecati illo
+                  corporis earum voluptates nostrum sunt distinctio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul class="pagination mt-4 justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Geri</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item" aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">İleri</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <footer class="mt-5 bg-body-tertiary bg-dark" data-bs-theme="dark">
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Site Haritası</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Araç Kiralama Koşulları</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Araç Kiralama Rehberi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >KVKK Aydınlatma Metni</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Çerez Politikası</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >İletişim</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-light text-center">Copyright © 2023 | Burak İşler</div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
